@@ -4,20 +4,14 @@
   "version": "0.0.0",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
+    "build": "preact build --template src/index.html",
     "dev": "preact  watch --template src/index.html",
     "lint": "eslint src"
   },
   "eslintConfig": {
-    "extends": [
-      "eslint-config-synacor",
-      "eslint-config-prettier"
-    ]
+    "extends": ["eslint-config-synacor", "eslint-config-prettier"]
   },
-  "eslintIgnore": [
-    "build/*"
-  ],
+  "eslintIgnore": ["build/*"],
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-prettier": "^2.9.0",
