@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "mft2",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build --template src/index.html",
