@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "mft2",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact  watch --template src/index.html",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-synacor",
+      "eslint-config-prettier"
+    ]
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.9.0",
+    "if-env": "^1.0.0",
+    "preact-cli": "^2.0.1"
+  },
+  "dependencies": {
+    "eslint-config-synacor": "^2.0.4",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "firebase": "^4.9.0",
+    "ganalytics": "^3.0.0",
+    "preact": "^8.2.6",
+    "preact-compat": "^3.17.0",
+    "preact-router": "^2.5.7",
+    "react-facebook": "^4.2.1",
+    "react-stripe-elements": "^1.4.0",
+    "recompose": "^0.26.0",
+    "styled-components": "^2.4.0"
+  }
+}
