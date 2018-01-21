@@ -1,8 +1,8 @@
-# {{ name }}
+# MFT2 Website
 
 ## CLI Commands
 
-``` bash
+```bash
 # install dependencies
 npm install
 
