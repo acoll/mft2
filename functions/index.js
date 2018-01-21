@@ -39,7 +39,7 @@ app.post("/register", (req, res) => {
         form.charge_id = result.id;
 
         events.push({
-          type: "REGISTERED" + token.livemode ? "" : "_TEST",
+          type: `REGISTERED${token.livemode ? "" : "_TEST"}`,
           timestamp: TIMESTAMP,
           payload: form
         });
