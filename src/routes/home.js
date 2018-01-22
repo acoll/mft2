@@ -1,6 +1,7 @@
-import { h } from "preact";
+import { h, Component } from "preact";
 import styled from "styled-components";
 import hero from "../assets/hero.jpg";
+import heroMin from "../assets/hero-min.jpeg";
 import theme from "../style/theme.js";
 import lllogo from "../assets/lli-logo.svg";
 import { Link } from "preact-router/match";
@@ -18,8 +19,9 @@ const Styles = styled.div`
   color: ${lightFontColor};
 
   background: transparent;
-  background-image: url(${hero});
-  background-image: linear-gradient(${overlay}, ${overlay}), url(${hero});
+  background-image: url(${props => props.bg});
+  background-image: linear-gradient(${overlay}, ${overlay}),
+    url(${props => props.bg});
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -272,23 +274,41 @@ function Info() {
   );
 }
 
-export default function Home() {
-  return (
-    <div>
-      <Styles>
-        <h1>
-          Monadnock Full <br /> Throttle Triathlon
-        </h1>
-        <div>
-          <Link className="cta" href="/register">
-            Register Now
-          </Link>
-        </div>
-        {/* <img src={logo} alt="MFT2 Logo" /> */}
-      </Styles>
-      <RaceDetails />
-      <RegisterBanner />
-      <Info />
-    </div>
-  );
+export default class Home extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      bg: heroMin
+    };
+  }
+  componentDidMount() {
+    setTimeout(
+      () =>
+        this.setState({
+          bg: hero
+        }),
+      1000
+    );
+  }
+  render() {
+    return (
+      <div>
+        <Styles bg={this.state.bg}>
+          <h1>
+            Monadnock Full <br /> Throttle Triathlon
+          </h1>
+          <div>
+            <Link className="cta" href="/register">
+              Register Now
+            </Link>
+          </div>
+          {/* <img src={logo} alt="MFT2 Logo" /> */}
+        </Styles>
+        <RaceDetails />
+        <RegisterBanner />
+        <Info />
+      </div>
+    );
+  }
 }

@@ -9,9 +9,14 @@
     "lint": "eslint src"
   },
   "eslintConfig": {
-    "extends": ["eslint-config-synacor", "eslint-config-prettier"]
+    "extends": [
+      "eslint-config-synacor",
+      "eslint-config-prettier"
+    ]
   },
-  "eslintIgnore": ["build/*"],
+  "eslintIgnore": [
+    "build/*"
+  ],
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-prettier": "^2.9.0",
@@ -24,6 +29,7 @@
     "eslint-plugin-node": "^5.2.1",
     "firebase": "^4.9.0",
     "ganalytics": "^3.0.0",
+    "image-trace-loader": "^0.0.2",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7",
