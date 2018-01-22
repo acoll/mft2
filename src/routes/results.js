@@ -1,4 +1,4 @@
-import { h } from "preact";
+import { h, Component } from "preact";
 import styled from "styled-components";
 import theme from "../style/theme.js";
 
@@ -10,6 +10,53 @@ const Style = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+const PhotosStyle = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    width: 100%;
+  }
+`;
+
+class Album extends Component {
+  componentDidMount() {
+    return fetch(`${window.API_URL}/photos/${this.props.year}`)
+      .then(res => res.json())
+      .then(({ data }) => this.setState({ photos: data }));
+  }
+  renderPhoto({ image, link }) {
+    const src = image.source;
+
+    return (
+      <a href={link} target="_blank">
+        <img src={src} alt="Photo From FB" />
+      </a>
+    );
+  }
+  render() {
+    if (!this.state.photos) {
+      return <div>Loading Photos</div>;
+    }
+
+    const sorted = this.state.photos
+      .map(photo => ({
+        image: photo.images[1],
+        link: photo.link
+      }))
+      .sort((a, b) => a.image.height - b.image.height);
+
+    return <PhotosStyle>{sorted.map(this.renderPhoto)}</PhotosStyle>;
+  }
+}
 
 const WinnersStyles = styled.section`
   display: grid;
@@ -73,7 +120,6 @@ function Winners() {
 }
 
 export default function Results({ year }) {
-  console.log(year);
   return (
     <div>
       <Style>
@@ -83,6 +129,7 @@ export default function Results({ year }) {
           <a href="http://my3.raceresult.com/81740/">my3.raceresult.com</a>.
         </p>
         <Winners />
+        <Album year={year} />
       </Style>
     </div>
   );

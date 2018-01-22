@@ -54,8 +54,7 @@ export default function Footer() {
       <div>
         <p>
           Like and follow us on facebook to get updates about the race. If you
-          have an questions or trouble with registration send us a message on
-          our facebook page.
+          have an questions send us a message on our facebook page.
         </p>
       </div>
     </FooterStyle>

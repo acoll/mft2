@@ -34,6 +34,9 @@ const Styles = styled.div`
   animation: appear 1s ease;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
+
+  .content {
+  }
 `;
 
 export default class App extends Component {
@@ -48,14 +51,9 @@ export default class App extends Component {
       window.scrollTo(0, 0);
     }
   };
-
-  componentDidMount() {
-    this.setState({ rendered: true });
-  }
-
   render() {
     return (
-      <Styles id="app" className={this.state.rendered ? "rendered" : ""}>
+      <Styles id="app">
         <Header />
         <div className="content">
           <Router onChange={this.handleRoute}>

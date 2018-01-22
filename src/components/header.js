@@ -38,7 +38,9 @@ export default function Header() {
   const lastYear = `${new Date().getFullYear() - 1}`;
   return (
     <StyledHeader>
-      <img src={logo} />
+      <Link activeClassName="active" href="/">
+        <img src={logo} alt="MFT2 Logo" />
+      </Link>
       <nav>
         <Link activeClassName="active" href="/">
           Home

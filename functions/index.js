@@ -4,6 +4,7 @@ const cors = require("cors");
 const express = require("express");
 const bodyParser = require("body-parser");
 const Stripe = require("stripe");
+const fetch = require("isomorphic-fetch");
 
 const config = functions.config();
 const app = express();
@@ -53,6 +54,29 @@ app.post("/register", (req, res) => {
     console.error(err);
     res.json({ error: "sorry" });
   }
+});
+
+app.get("/photos/:year", (req, res) => {
+  const year = req.params.year;
+
+  const albumId = config.fb[`album_${year}`];
+
+  if (!albumId) {
+    res.status(400).send("Invalid year:", year);
+  }
+
+  fetch(
+    `https://graph.facebook.com/oauth/access_token?client_id=${
+      config.fb.app_id
+    }&client_secret=${config.fb.secret_id}&grant_type=client_credentials`
+  )
+    .then(response => response.json())
+    .then(({ access_token }) => {
+      return fetch(
+        `https://graph.facebook.com/v2.8/${albumId}/photos?fields=link,images&access_token=${access_token}&limit=300`
+      ).then(response => response.json());
+    })
+    .then(data => res.json(data));
 });
 
 exports.api = functions.https.onRequest(app);
