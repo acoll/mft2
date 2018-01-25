@@ -5,9 +5,13 @@ import Button from "../components/button";
 import { event } from "../lib/tracking";
 
 const WizardStyle = styled.div`
+  display: flex;
+  flex-direction: column;
   display: grid;
 
   .choice {
+    display: flex;
+    flex-direction: column;
     display: grid;
     max-width: 600px;
     grid-template-rows: 1fr 1fr 1fr;
@@ -27,6 +31,8 @@ const WizardStyle = styled.div`
   }
 
   form {
+    display: flex;
+    flex-direction: column;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 16px;
@@ -465,16 +471,22 @@ export default class Register extends Component {
         )}
         <p className="error">{this.state.error}</p>
 
-        <p>
-          Send us a message on our{" "}
-          <a
-            href="https://www.facebook.com/MonadnockFullThrottle/"
-            target="_blank"
-          >
-            facebook page
-          </a>{" "}
-          if you have any questions.
-        </p>
+        <ul>
+          <li>
+            You must be 18 on race day or bring a guardian to sign the liability
+            waiver.
+          </li>
+          <li>
+            Send us a message on our{" "}
+            <a
+              href="https://www.facebook.com/MonadnockFullThrottle/"
+              target="_blank"
+            >
+              facebook page
+            </a>{" "}
+            if you have any questions.
+          </li>
+        </ul>
       </Style>
     );
   }

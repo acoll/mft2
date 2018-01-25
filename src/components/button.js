@@ -13,6 +13,8 @@ const Button = styled.button`
   box-shadow: inset -1px -1px 1px rgba(0, 0, 0, 0.25);
 
   > div {
+    display: flex;
+    flex-direction: column;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     justify-items: center;

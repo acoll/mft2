@@ -12,6 +12,8 @@ const Style = styled.div`
 `;
 
 const PhotosStyle = styled.div`
+  display: flex;
+  flex-direction: column;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 16px;
@@ -59,6 +61,8 @@ class Album extends Component {
 }
 
 const WinnersStyles = styled.section`
+  display: flex;
+  flex-direction: column;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 24px;

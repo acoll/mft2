@@ -18,6 +18,8 @@ const StyledHeader = styled.header`
   }
 
   nav {
+    display: flex;
+    flex-direction: column;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 24px;

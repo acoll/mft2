@@ -13,6 +13,8 @@ import { pageview, event } from "../lib/tracking";
 // const sheet = new ServerStyleSheet();
 
 const Styles = styled.div`
+  display: flex;
+  flex-direction: column;
   display: grid;
   grid-template-rows: auto 1fr auto;
 

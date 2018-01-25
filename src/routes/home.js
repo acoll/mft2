@@ -9,6 +9,8 @@ import { Link } from "preact-router/match";
 const { headerImgSize, sidePadding, lightFontColor, overlay, darkBg } = theme;
 
 const Styles = styled.div`
+  display: flex;
+  flex-direction: column;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-row-gap: 24px;
@@ -218,6 +220,8 @@ const InfoStyles = styled.section`
   }
 
   .wrapper {
+    display: flex;
+    flex-direction: column;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 24px;

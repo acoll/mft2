@@ -9,6 +9,8 @@ const { sidePadding, lightFontColor, darkBg } = theme;
 const FooterStyle = styled.footer`
   background-color: ${darkBg};
   padding: 48px ${sidePadding};
+  display: flex;
+  flex-direction: column;
   display: grid;
   grid-template-columns: auto 1fr auto 1fr;
   grid-column-gap: 24px;
