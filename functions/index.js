@@ -6,6 +6,8 @@ const bodyParser = require("body-parser");
 const Stripe = require("stripe");
 const fetch = require("isomorphic-fetch");
 
+console.log("SETUP START");
+
 const config = functions.config();
 const app = express();
 admin.initializeApp(config.firebase);
@@ -18,9 +20,11 @@ app.use(cors({ origin: true }));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+console.log("SETUP END");
+
 app.post("/register", (req, res) => {
   try {
-    console.info(req.method, req.path, req.body);
+    console.info(req.method, req.path);
     const { token, form } = req.body;
 
     const stripe = token.livemode
@@ -35,8 +39,6 @@ app.post("/register", (req, res) => {
         description: "MFT2 Registration"
       })
       .then(result => {
-        console.log(result);
-
         form.charge_id = result.id;
 
         events.push({

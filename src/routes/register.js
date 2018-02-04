@@ -182,6 +182,22 @@ const State = ({ onChange, value }) => (
   </div>
 );
 
+const Gender = ({ onChange, value }) => {
+  return (
+    <div>
+      <label for="state">Gender</label>
+      <input
+        value={value}
+        onChange={onChange}
+        type="text"
+        name="gender"
+        placeholder="Male"
+        required
+      />
+    </div>
+  );
+};
+
 const FitnessLevel = ({ onChange, value }) => (
   <div>
     <label for="fitness">Fitness Level</label>
@@ -226,6 +242,7 @@ class Wizard extends Component {
     form: {
       first_name: "",
       last_name: "",
+      gender: "",
       email: "",
       city: "",
       state: "",
@@ -258,6 +275,7 @@ class Wizard extends Component {
       email,
       city,
       state,
+      gender,
       fitness,
       shirt_size_1,
       shirt_size_2,
@@ -269,6 +287,7 @@ class Wizard extends Component {
           <TeamName value={team_name} onChange={this._updateFormData} />
           <FirstName value={first_name} onChange={this._updateFormData} />
           <LastName value={last_name} onChange={this._updateFormData} />
+          <Gender value={gender} onChange={this._updateFormData} />
           <EmailAddress value={email} onChange={this._updateFormData} />
           <City value={city} onChange={this._updateFormData} />
           <State value={state} onChange={this._updateFormData} />
@@ -319,6 +338,7 @@ class Wizard extends Component {
       city,
       state,
       fitness,
+      gender,
       shirt_size_1
     } = this.state.form;
     return (
@@ -326,6 +346,7 @@ class Wizard extends Component {
         <form onSubmit={this._submitForm}>
           <FirstName value={first_name} onChange={this._updateFormData} />
           <LastName value={last_name} onChange={this._updateFormData} />
+          <Gender value={gender} onChange={this._updateFormData} />
           <EmailAddress value={email} onChange={this._updateFormData} />
           <City value={city} onChange={this._updateFormData} />
           <State value={state} onChange={this._updateFormData} />
@@ -384,7 +405,7 @@ const Style = styled.div`
 
 export default class Register extends Component {
   postRegister(token, form) {
-    this.setState({ loading: true });
+    setTimeout(() => this.setState({ loading: true }), 1);
 
     return fetch(`${window.API_URL}/register`, {
       method: "POST",
