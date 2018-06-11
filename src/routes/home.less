@@ -1,0 +1,156 @@
+@import "../style/theme";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 24px;
+
+  position: relative;
+  height: calc(100vh - @header-img-size);
+  padding: 0 @side-padding;
+  color: @light-font-color;
+
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+
+  @keyframes appearUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  h1 {
+    opacity: 0;
+    text-align: center;
+    font-size: 8vw;
+    animation: appearUp 1s ease;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  img {
+    // z-index: -1;
+    // position: absolute;
+  }
+
+  .cta {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    padding: 16px;
+    background-color: rgba(236, 78, 28, 0.9);
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset -1px -1px 1px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+  }
+}
+
+.info {
+  padding: 48px @side-padding;
+
+  .fineprint {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+    align-items: center;
+    @media only screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+
+    .logo-wrapper {
+      text-align: center;
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+.registerBanner {
+  display: block;
+  padding: 48px @side-padding;
+  font-size: 30px;
+  color: @light-font-color;
+  background-color: @dark-bg;
+  text-align: center;
+  font-weight: 900;
+  text-decoration: none;
+
+  @keyframes wiggle {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  span {
+    display: block;
+    animation: wiggle 1.3s infinite 5s;
+  }
+}
+
+.raceDetail {
+  padding: 32px @side-padding;
+
+  h1 {
+    font-size: 36px;
+  }
+}

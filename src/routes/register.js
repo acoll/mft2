@@ -1,80 +1,7 @@
 import { h, Component } from "preact";
-import styled from "styled-components";
-import theme from "../style/theme.js";
+import style from "./register.less";
 import Button from "../components/button";
 import { event } from "../lib/tracking";
-
-const WizardStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  display: grid;
-
-  .choice {
-    display: flex;
-    flex-direction: column;
-    display: grid;
-    max-width: 600px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-row-gap: 24px;
-
-    text-align: center;
-    align-items: center;
-
-    button {
-      width: auto;
-      padding: 16px;
-      border: 2px solid black;
-      background-color: snow;
-      text-transform: uppercase;
-      font-size: 16px;
-    }
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    max-width: 600px;
-    padding-bottom: 16px;
-
-    @media only screen and (max-width: 700px) {
-      grid-template-columns: 1fr;
-    }
-
-    .submit-wrapper {
-      grid-column: span 2;
-      @media only screen and (max-width: 700px) {
-        grid-column: span 1;
-      }
-    }
-
-    .teamname {
-      grid-column: span 2;
-      @media only screen and (max-width: 700px) {
-        grid-column: span 1;
-      }
-    }
-
-    > div {
-      display: flex;
-      flex-direction: column;
-      label {
-        padding-bottom: 4px;
-      }
-
-      input,
-      select {
-        font-size: 14px;
-        padding: 4px;
-        border: 1px solid black;
-        border-radius: 0;
-      }
-    }
-  }
-`;
 
 const ShirtSize = ({ name, onChange, value }) => (
   <div>
@@ -99,7 +26,7 @@ const ShirtSize = ({ name, onChange, value }) => (
 );
 
 const TeamName = ({ onChange, value }) => (
-  <div className="teamname">
+  <div class={style.teamname}>
     <label for="team_name">Team Name</label>
     <input
       value={value}
@@ -254,7 +181,7 @@ class Wizard extends Component {
   });
   renderChoicePage() {
     return (
-      <div className="choice">
+      <div class={style.choice}>
         <button onClick={this.updateRegistrationType("SINGLE")}>
           Single $75
         </button>
@@ -282,7 +209,7 @@ class Wizard extends Component {
       shirt_size_3
     } = this.state.form;
     return (
-      <div className="single">
+      <div class={style.single}>
         <form onSubmit={this._submitForm}>
           <TeamName value={team_name} onChange={this._updateFormData} />
           <FirstName value={first_name} onChange={this._updateFormData} />
@@ -323,7 +250,7 @@ class Wizard extends Component {
                 />
               ]}
 
-          <div className="submit-wrapper">
+          <div class={style.submitWrapper}>
             <Button spinning={this.props.loading}>Pay Now</Button>
           </div>
         </form>
@@ -342,7 +269,7 @@ class Wizard extends Component {
       shirt_size_1
     } = this.state.form;
     return (
-      <div className="single">
+      <div class={style.single}>
         <form onSubmit={this._submitForm}>
           <FirstName value={first_name} onChange={this._updateFormData} />
           <LastName value={last_name} onChange={this._updateFormData} />
@@ -357,7 +284,7 @@ class Wizard extends Component {
             name="shirt_size_1"
           />
 
-          <div className="submit-wrapper">
+          <div class={style.submitWrapper}>
             <Button spinning={this.props.loading}>Pay Now</Button>
           </div>
         </form>
@@ -381,27 +308,12 @@ class Wizard extends Component {
   }
   render() {
     return (
-      <WizardStyle loading={this.props.loading}>
+      <div class={`${style.wizard} ${this.props.loading ? "loading" : ""}`}>
         {this.renderContent(this.state)}
-      </WizardStyle>
+      </div>
     );
   }
 }
-
-const { sidePadding } = theme;
-
-const Style = styled.div`
-  padding-left: ${sidePadding};
-  padding-right: ${sidePadding};
-  display: flex;
-  flex-direction: column;
-
-  p.error {
-    font-size: 18px;
-    color: #ff0033;
-    font-weight: bold;
-  }
-`;
 
 export default class Register extends Component {
   postRegister(token, form) {
@@ -482,7 +394,7 @@ export default class Register extends Component {
   }
   render() {
     return (
-      <Style>
+      <div class={style.page}>
         <h1>Register</h1>
 
         {this.state.checkoutComplete ? (
@@ -490,7 +402,7 @@ export default class Register extends Component {
         ) : (
           <Wizard onSubmit={this.checkout} loading={this.state.loading} />
         )}
-        <p className="error">{this.state.error}</p>
+        <p class={style.error}>{this.state.error}</p>
 
         <ul>
           <li>
@@ -508,7 +420,7 @@ export default class Register extends Component {
             if you have any questions.
           </li>
         </ul>
-      </Style>
+      </div>
     );
   }
 }

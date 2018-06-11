@@ -1,0 +1,48 @@
+@import "../style/theme";
+
+.page {
+  padding-left: @side-padding;
+  padding-right: @side-padding;
+  display: flex;
+  flex-direction: column;
+}
+
+.winners {
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 16px;
+
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fineprint {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-weight: 900;
+    font-size: 16px;
+  }
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    width: 100%;
+  }
+}

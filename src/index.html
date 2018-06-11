@@ -3,6 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta property="og:title" content="MFT2">
+	<meta property="og:description" content="A triathlon fundraiser to support Little Lambs Intl">
+	<meta property="og:image" content="https://monadnockfullthrottle.com/c73e761c4284d66f9a1ad2ed3492325c.png">
+	<meta property="og:url" content="https://monadnockfullthrottle.com/">
 	<title>
 		<%= htmlWebpackPlugin.options.title %>
 	</title>
@@ -10,12 +14,9 @@
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
-
-
 	<script>
 		(function () {
 			window.API_URL = 'https://us-central1-project-3321352546240710706.cloudfunctions.net/api';
-
 			var configs = {
 				live: {
 					stripe_pk: 'pk_live_wunl6mS4Nq2bbtKtJ0UK5JSx'
@@ -24,15 +25,13 @@
 					stripe_pk: 'pk_test_gMQVOojr1i9YrcvgjFLc4186'
 				}
 			};
-
 			var isTestMode = window.location.hostname.includes('localhost') || window.location.hostname.includes('192.168');
-
 			window.config = isTestMode ? configs.test : configs.live;
 		})()
 	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75893351-1"></script>
-	<script src="https://checkout.stripe.com/checkout.js"></script>
+	<script async defer src="https://checkout.stripe.com/checkout.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -40,14 +39,36 @@
 
 		gtag('config', 'UA-75893351-1');
 	</script>
+	<style>
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			background: #fafafa;
+			font-family: "Helvetica Neue", arial, sans-serif;
+			font-weight: 400;
+			color: #444;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
 
+		* {
+			box-sizing: border-box;
+		}
+
+		#app {
+			height: 100%;
+		}
+	</style>
 
 	<% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
 		<meta name="theme-color" content="<%= htmlWebpackPlugin.options.manifest.theme_color %>">
 		<% } %>
 			<% for (var chunk of webpack.chunks) { %>
 				<% if (chunk.names.length === 1 && chunk.names[0] === 'polyfills') continue; %>
-					<% for (var file of chunk.files) { %>
+					<% for (var file of chunk.files) { console.log(file); %>
 						<% if (htmlWebpackPlugin.options.preload && file.match(/\.(js|css)$/)) { %>
 							<link rel="preload" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
 							<% } else if (file.match(/manifest\.json$/)) { %>

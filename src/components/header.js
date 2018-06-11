@@ -1,47 +1,14 @@
 import { h } from "preact";
 import { Link } from "preact-router/match";
-import styled from "styled-components";
+import style from "./header.less";
 import logo from "../assets/logo.png";
-import theme from "../style/theme";
-
-const StyledHeader = styled.header`
-  display: flex;
-  padding: 16px ${theme.sidePadding};
-  justify-content: space-between;
-  align-items: center;
-
-  img {
-    height: 65px;
-    @media only screen and (max-width: 600px) {
-      height: 35px;
-    }
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 24px;
-  }
-
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--dark-font-color);
-
-    &:visited: {
-      color: var(--dark-font-color);
-    }
-  }
-`;
 
 export default function Header() {
   const lastYear = `${new Date().getFullYear() - 1}`;
   return (
-    <StyledHeader>
+    <header class={style.header}>
       <Link activeClassName="active" href="/">
-        <img src={logo} alt="MFT2 Logo" />
+        <img class={style.logo} src={logo} alt="MFT2 Logo" />
       </Link>
       <nav>
         <Link activeClassName="active" href="/">
@@ -54,6 +21,6 @@ export default function Header() {
           {lastYear}
         </Link>
       </nav>
-    </StyledHeader>
+    </header>
   );
 }

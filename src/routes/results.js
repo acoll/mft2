@@ -1,33 +1,5 @@
 import { h, Component } from "preact";
-import styled from "styled-components";
-import theme from "../style/theme.js";
-
-const { sidePadding } = theme;
-
-const Style = styled.div`
-  padding-left: ${sidePadding};
-  padding-right: ${sidePadding};
-  display: flex;
-  flex-direction: column;
-`;
-
-const PhotosStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 16px;
-  @media only screen and (max-width: 900px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media only screen and (max-width: 500px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  img {
-    width: 100%;
-  }
-`;
+import style from "./results.less";
 
 class Album extends Component {
   componentDidMount() {
@@ -56,37 +28,15 @@ class Album extends Component {
       }))
       .sort((a, b) => a.image.height - b.image.height);
 
-    return <PhotosStyle>{sorted.map(this.renderPhoto)}</PhotosStyle>;
+    return <div class={style.photos}>{sorted.map(this.renderPhoto)}</div>;
   }
 }
-
-const WinnersStyles = styled.section`
-  display: flex;
-  flex-direction: column;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 24px;
-  grid-row-gap: 16px;
-
-  @media only screen and (max-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .fineprint {
-    font-size: 12px;
-  }
-
-  h5 {
-    font-weight: 900;
-    font-size: 16px;
-  }
-`;
 
 function Winner({ names, overallTime, description }) {
   return (
     <div>
       {names.map(name => <h5>{name}</h5>)}
-      <p className="fineprint">Overall Time: {overallTime}</p>
+      <p class={style.fineprint}>Overall Time: {overallTime}</p>
       <p>{description}</p>
     </div>
   );
@@ -94,7 +44,7 @@ function Winner({ names, overallTime, description }) {
 
 function Winners() {
   return (
-    <WinnersStyles>
+    <section class={style.winners}>
       <Winner
         names={["Lars Sauvola"]}
         overallTime="1:55:47.0"
@@ -119,22 +69,20 @@ function Winners() {
         overallTime="3:53:10.1"
         description="First Place 3-Person Team"
       />
-    </WinnersStyles>
+    </section>
   );
 }
 
 export default function Results({ year }) {
   return (
-    <div>
-      <Style>
-        <h1>{year} Results</h1>
-        <p>
-          For full race results, visit{" "}
-          <a href="http://my3.raceresult.com/81740/">my3.raceresult.com</a>.
-        </p>
-        <Winners />
-        <Album year={year} />
-      </Style>
+    <div class={style.page}>
+      <h1>{year} Results</h1>
+      <p>
+        For full race results, visit{" "}
+        <a href="http://my3.raceresult.com/81740/">my3.raceresult.com</a>.
+      </p>
+      <Winners />
+      <Album year={year} />
     </div>
   );
 }

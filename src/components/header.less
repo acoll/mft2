@@ -1,0 +1,33 @@
+@import "../style/theme";
+
+.header {
+  display: flex;
+  padding: 16px @side-padding;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 24px;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark-font-color);
+
+    &:visited {
+      color: var(--dark-font-color);
+    }
+  }
+}
+
+.logo {
+  height: 65px;
+  @media only screen and (max-width: 600px) {
+    height: 35px;
+  }
+}

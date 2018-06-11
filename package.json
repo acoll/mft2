@@ -9,14 +9,20 @@
     "lint": "eslint src"
   },
   "eslintConfig": {
-    "extends": ["eslint-config-synacor", "eslint-config-prettier"]
+    "extends": [
+      "eslint-config-synacor",
+      "eslint-config-prettier"
+    ]
   },
-  "eslintIgnore": ["build/*"],
+  "eslintIgnore": [
+    "build/*"
+  ],
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-prettier": "^2.9.0",
     "if-env": "^1.0.0",
-    "preact-cli": "^2.0.1"
+    "preact-cli": "^2.0.1",
+    "preact-cli-plugin-critical-css": "^0.1.0"
   },
   "dependencies": {
     "eslint-config-synacor": "^2.0.4",
@@ -24,13 +30,14 @@
     "eslint-plugin-node": "^5.2.1",
     "firebase": "^4.9.0",
     "ganalytics": "^3.0.0",
-    "image-trace-loader": "^0.0.2",
+    "less": "^3.0.1",
+    "less-loader": "^4.0.5",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7",
     "react-facebook": "^4.2.1",
+    "react-progressive-image": "^0.3.0",
     "react-stripe-elements": "^1.4.0",
-    "recompose": "^0.26.0",
-    "styled-components": "^2.4.0"
+    "recompose": "^0.26.0"
   }
 }
