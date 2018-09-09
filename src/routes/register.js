@@ -3,6 +3,12 @@ import style from "./register.less";
 import Button from "../components/button";
 import { event } from "../lib/tracking";
 
+const amounts = {
+  SINGLE: 7500,
+  DOUBLE: 11500,
+  TRIPLE: 14500
+};
+
 const ShirtSize = ({ name, onChange, value }) => (
   <div>
     <label for={name}>Shirt Size</label>
@@ -183,13 +189,13 @@ class Wizard extends Component {
     return (
       <div class={style.choice}>
         <button onClick={this.updateRegistrationType("SINGLE")}>
-          Single $75
+          Single ${amounts.SINGLE / 100}
         </button>
         <button onClick={this.updateRegistrationType("DOUBLE")}>
-          2-Person Team $115
+          2-Person Team ${amounts.DOUBLE / 100}
         </button>
         <button onClick={this.updateRegistrationType("TRIPLE")}>
-          3-Person Team $135
+          3-Person Team ${amounts.TRIPLE / 100}
         </button>
       </div>
     );
@@ -346,11 +352,6 @@ export default class Register extends Component {
   }
   checkout(type, form) {
     event("CHECKOUT_STARTED", { event_label: `TYPE:${type}` });
-    const amounts = {
-      SINGLE: 7500,
-      DOUBLE: 11500,
-      TRIPLE: 13500
-    };
 
     this.setState({ loading: true });
 
@@ -395,8 +396,13 @@ export default class Register extends Component {
   render() {
     return (
       <div class={style.page}>
-        <h1>Register</h1>
-
+        <h1>2019 MFT2 Registration</h1>
+        {/* <p>
+          Online registration is now closed. You can still register in person at
+          7am tomorrow (September 8th) at the Monadnock Bible Conference
+          campground (on Poole road before you reach the Monadnock State Park).
+          Best of luck and we look forward to seeing you tomorrow morning!
+        </p> */}
         {this.state.checkoutComplete ? (
           <h4>Thank You!</h4>
         ) : (

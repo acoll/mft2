@@ -36,7 +36,8 @@ app.post("/register", (req, res) => {
         amount: form.amount,
         currency: "usd",
         source: token.id,
-        description: "MFT2 Registration"
+        description: "MFT2 Registration",
+        receipt_email: form.email
       })
       .then(result => {
         form.charge_id = result.id;

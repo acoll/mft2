@@ -1,6 +1,7 @@
 import { h, Component } from "preact";
 import style from "./home.less";
 import lllogo from "../assets/lli-logo.svg";
+import hammerLogo from "../assets/hammerlogo.png";
 import { Link } from "preact-router/match";
 import ProgressiveImage from "../components/ProgressiveImage";
 
@@ -18,13 +19,13 @@ class RaceDetails extends Component {
     showMap: false
   };
   componentDidMount() {
-    // requestAnimationFrame(() => {
-    //   requestAnimationFrame(() => {
-    //     this.setState({
-    //       showMap: true
-    //     });
-    //   });
-    // });
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        this.setState({
+          showMap: true
+        });
+      });
+    });
   }
   render() {
     return (
@@ -71,7 +72,14 @@ class RaceDetails extends Component {
 
         {renderDetailItem(
           "Refuel!",
-          <p>Join us after the race for food, hydration, and ceremonies.</p>
+          <div>
+            <p>Join us after the race for food, hydration, and ceremonies.</p>
+            <p style={{ display: "flex", alignItems: "center" }}>
+              <img src={hammerLogo} style={{ height: 100, paddingRight: 50 }} />
+              Race supplements and materials provided by one of our sponsors
+              Hammer Nutrition.
+            </p>
+          </div>
         )}
 
         {this.state.showMap ? (
@@ -89,7 +97,7 @@ class RaceDetails extends Component {
 function RegisterBanner() {
   return (
     <Link href="/register" class={style.registerBanner}>
-      <span>Register now for the 2018 Triathlon</span>
+      <span>Register now for the 2019 Triathlon</span>
     </Link>
   );
 }
@@ -99,7 +107,7 @@ function Info() {
     <section class={style.info}>
       <h1> Fundraising for Little Lambs International</h1>
       <hr />
-      <div className="wrapper">
+      <div className={style.wrapper}>
         <div>
           <p>
             Little Lambs International plans several trips throughout the course
@@ -112,10 +120,11 @@ function Info() {
             To learn more about the Little Lambs International mission, visit{" "}
             <a href="http://www.littlelambsintl.org/">
               http://www.littlelambsintl.org
-            </a>.
+            </a>
+            .
           </p>
         </div>
-        <div className="logo-wrapper">
+        <div className={style["logo-wrapper"]}>
           <a href="http://www.littlelambsintl.org/">
             <img
               src={lllogo}
@@ -140,7 +149,7 @@ export default function Home() {
           Monadnock Full <br /> Throttle Triathlon
         </h1>
         <div>
-          <Link className="cta" href="/register">
+          <Link className={style.cta} href="/register">
             Register Now
           </Link>
         </div>

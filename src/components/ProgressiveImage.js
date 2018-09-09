@@ -23,7 +23,7 @@ export default class ProgressiveImage extends Component {
     return (
       <div style={{ position: "absolute", width: "100%", height: "100%" }}>
         <img
-          style={{ position: "absolute", width: "100%", height: "100%" }}
+          style={{ position: "absolute", width: "100%" }}
           src={this.props.src}
           alt={this.props.alt}
         />
@@ -31,7 +31,6 @@ export default class ProgressiveImage extends Component {
           style={{
             position: "absolute",
             width: "100%",
-            height: "100%",
             opacity: this.state.loading ? 1 : 0,
             transition: "opacity 650ms ease-in"
           }}

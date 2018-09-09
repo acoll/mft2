@@ -9,7 +9,7 @@
 
   position: relative;
   height: calc(100vh - @header-img-size);
-  padding: 0 @side-padding;
+
   color: @light-font-color;
 
   justify-content: center;
@@ -82,29 +82,25 @@
   .fineprint {
     font-size: 12px;
   }
+}
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 24px;
-    align-items: center;
-    @media only screen and (max-width: 700px) {
-      grid-template-columns: 1fr;
-    }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  align-items: center;
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
 
-    .logo-wrapper {
-      text-align: center;
-      @media only screen and (max-width: 700px) {
-        display: none;
-      }
-
-      img {
-        width: 100%;
-        max-width: 300px;
-      }
-    }
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 80%;
   }
 }
 

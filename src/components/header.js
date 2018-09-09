@@ -4,7 +4,7 @@ import style from "./header.less";
 import logo from "../assets/logo.png";
 
 export default function Header() {
-  const lastYear = `${new Date().getFullYear() - 1}`;
+  const yearsAgo = num => `${new Date().getFullYear() - num}`;
   return (
     <header class={style.header}>
       <Link activeClassName="active" href="/">
@@ -17,9 +17,12 @@ export default function Header() {
         <Link activeClassName="active" href="/register">
           Register
         </Link>
-        <Link activeClassName="active" href={`/results/${lastYear}`}>
-          {lastYear}
+        <Link activeClassName="active" href={`/results/${yearsAgo(0)}`}>
+          {yearsAgo(0)}
         </Link>
+        {/* <Link activeClassName="active" href={`/results/${yearsAgo(1)}`}>
+          {yearsAgo(1)}
+        </Link> */}
       </nav>
     </header>
   );
