@@ -141,15 +141,23 @@ function Winners({ year }) {
 
 export default function Results({ year }) {
   const url = results[year].timesUrl;
+
+  const lastYear = parseInt(year) - 1;
+
   return (
     <div class={style.page}>
       <h1>{year} Results</h1>
       <p>
-        For full race results, visit <a href={url}>my3.raceresult.com</a>.
+        For full race results, visit <a href={url}>my3.raceresult.com</a>.<br />
+        <br />
+        {results[`${lastYear}`] ? (
+          <a href={`/results/${lastYear}`}>Looking for last years results?</a>
+        ) : null}
       </p>
       <Winners year={year} />
       <div style={{ height: 100 }} />
       <Album year={year} />
+      <div style={{ height: 100 }} />
     </div>
   );
 }
