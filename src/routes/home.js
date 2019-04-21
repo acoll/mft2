@@ -30,8 +30,8 @@ class RaceDetails extends Component {
   render() {
     return (
       <section class={style.raceDetail}>
-        <h1>2018 Monadnock Full Throttle Triathlon</h1>
-        <h3>September 8th, 2018</h3>
+        <h1>2019 Monadnock Full Throttle Triathlon</h1>
+        <h3>September 7th, 2019</h3>
         <hr />
         <h2>Race Day Timeline</h2>
         {renderDetailItem(
@@ -74,11 +74,11 @@ class RaceDetails extends Component {
           "Refuel!",
           <div>
             <p>Join us after the race for food, hydration, and ceremonies.</p>
-            <p style={{ display: "flex", alignItems: "center" }}>
+            {/* <p style={{ display: "flex", alignItems: "center" }}>
               <img src={hammerLogo} style={{ height: 100, paddingRight: 50 }} />
               Race supplements and materials provided by one of our sponsors
               Hammer Nutrition.
-            </p>
+            </p> */}
           </div>
         )}
 

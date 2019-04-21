@@ -341,6 +341,10 @@ export default class Register extends Component {
           event("CHECKOUT_ERROR", { event_label: res.error.message });
           this.setState({ loading: false, error: res.error });
         } else {
+          window.fbq("track", "Purchase", {
+            value: form.amount,
+            currency: "USD"
+          });
           event("CHECKOUT_SUCCESS", { event_label: `TYPE:${form.type}` });
           this.setState({
             loading: false,

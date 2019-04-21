@@ -1,89 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="MFT2" />
+    <meta
+      property="og:description"
+      content="A triathlon fundraiser to support Little Lambs Intl"
+    />
+    <meta
+      property="og:image"
+      content="https://monadnockfullthrottle.com/c73e761c4284d66f9a1ad2ed3492325c.png"
+    />
+    <meta property="og:url" content="https://monadnockfullthrottle.com/" />
+    <title>
+      <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="manifest"
+      href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json"
+    />
+    <script>
+      (function() {
+        window.API_URL =
+          "https://us-central1-project-3321352546240710706.cloudfunctions.net/api";
+        var configs = {
+          live: {
+            stripe_pk: "pk_live_wunl6mS4Nq2bbtKtJ0UK5JSx"
+          },
+          test: {
+            stripe_pk: "pk_test_gMQVOojr1i9YrcvgjFLc4186"
+          }
+        };
+        var isTestMode =
+          window.location.hostname.includes("localhost") ||
+          window.location.hostname.includes("192.168");
+        window.config = isTestMode ? configs.test : configs.live;
+      })();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-75893351-1"
+    ></script>
+    <script async defer src="https://checkout.stripe.com/checkout.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-	<meta charset="utf-8">
-	<meta property="og:title" content="MFT2">
-	<meta property="og:description" content="A triathlon fundraiser to support Little Lambs Intl">
-	<meta property="og:image" content="https://monadnockfullthrottle.com/c73e761c4284d66f9a1ad2ed3492325c.png">
-	<meta property="og:url" content="https://monadnockfullthrottle.com/">
-	<title>
-		<%= htmlWebpackPlugin.options.title %>
-	</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
-	<script>
-		(function () {
-			window.API_URL = 'https://us-central1-project-3321352546240710706.cloudfunctions.net/api';
-			var configs = {
-				live: {
-					stripe_pk: 'pk_live_wunl6mS4Nq2bbtKtJ0UK5JSx'
-				},
-				test: {
-					stripe_pk: 'pk_test_gMQVOojr1i9YrcvgjFLc4186'
-				}
-			};
-			var isTestMode = window.location.hostname.includes('localhost') || window.location.hostname.includes('192.168');
-			window.config = isTestMode ? configs.test : configs.live;
-		})()
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75893351-1"></script>
-	<script async defer src="https://checkout.stripe.com/checkout.js"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+      gtag("config", "UA-75893351-1");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2444875832210620");
+      fbq("track", "PageView");
+    </script>
 
-		gtag('config', 'UA-75893351-1');
-	</script>
-	<style>
-		html,
-		body {
-			height: 100%;
-			width: 100%;
-			padding: 0;
-			margin: 0;
-			background: #fafafa;
-			font-family: "Helvetica Neue", arial, sans-serif;
-			font-weight: 400;
-			color: #444;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=2444875832210620&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #fafafa;
+        font-family: "Helvetica Neue", arial, sans-serif;
+        font-weight: 400;
+        color: #444;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
-		* {
-			box-sizing: border-box;
-		}
+      * {
+        box-sizing: border-box;
+      }
 
-		#app {
-			height: 100%;
-		}
-	</style>
+      #app {
+        height: 100%;
+      }
+    </style>
 
-	<% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
-		<meta name="theme-color" content="<%= htmlWebpackPlugin.options.manifest.theme_color %>">
-		<% } %>
-			<% for (var chunk of webpack.chunks) { %>
-				<% if (chunk.names.length === 1 && chunk.names[0] === 'polyfills') continue; %>
-					<% for (var file of chunk.files) { console.log(file); %>
-						<% if (htmlWebpackPlugin.options.preload && file.match(/\.(js|css)$/)) { %>
-							<link rel="preload" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
-							<% } else if (file.match(/manifest\.json$/)) { %>
-								<link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath + file %>">
-								<% } %>
-									<% } %>
-										<% } %>
-</head>
+    <% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
+    <meta
+      name="theme-color"
+      content="<%= htmlWebpackPlugin.options.manifest.theme_color %>"
+    />
+    <% } %> <% for (var chunk of webpack.chunks) { %> <% if (chunk.names.length
+    === 1 && chunk.names[0] === 'polyfills') continue; %> <% for (var file of
+    chunk.files) { console.log(file); %> <% if
+    (htmlWebpackPlugin.options.preload && file.match(/\.(js|css)$/)) { %>
+    <link
+      rel="preload"
+      href="<%= htmlWebpackPlugin.files.publicPath + file %>"
+      as="<%= file.match(/\.css$/)?'style':'script' %>"
+    />
+    <% } else if (file.match(/manifest\.json$/)) { %>
+    <link
+      rel="manifest"
+      href="<%= htmlWebpackPlugin.files.publicPath + file %>"
+    />
+    <% } %> <% } %> <% } %>
+  </head>
 
-<body>
-	<%= htmlWebpackPlugin.options.ssr({
-			url: '/'
-		}) %>
-		<script defer src="<%= htmlWebpackPlugin.files.chunks['bundle'].entry %>"></script>
-		<script>window.fetch || document.write('<script src="<%= htmlWebpackPlugin.files.chunks["polyfills"].entry %>"><\/script>')</script>
-</body>
-
+  <body>
+    <%= htmlWebpackPlugin.options.ssr({ url: '/' }) %>
+    <script
+      defer
+      src="<%= htmlWebpackPlugin.files.chunks['bundle'].entry %>"
+    ></script>
+    <script>
+      window.fetch ||
+        document.write(
+          '<script src="<%= htmlWebpackPlugin.files.chunks["polyfills"].entry %>"><\/script>'
+        );
+    </script>
+  </body>
 </html>
