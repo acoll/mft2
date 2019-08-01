@@ -55,18 +55,19 @@ class RaceDetails extends Component {
           <p>
             The bike event follows a 11.2 mile route around Thorndike Pond. See
             the map below for the detailed route or turn-by-turn directions. The
-            bike event ends at the Monadnock State park where there will be a
-            water and fuel station to help you push through the hike.
+            bike event ends at the campground where there will be a water and
+            fuel station to help you push through the hike.
           </p>
         )}
 
         {renderDetailItem(
           "Hike",
           <p>
-            The 5.3 mile hike starts at the campground, follows the remainder of
-            the road up to the state park. Athletes will climb the White Dot
+            The 5.3 mile hike starts at the campground and follows the remainder
+            of the road up to the state park. Athletes will climb the White Dot
             trail, descend the White Cross trail and finish back at the
-            campground.
+            campground. There will be at least 2 water stations along the hike
+            route.
           </p>
         )}
 

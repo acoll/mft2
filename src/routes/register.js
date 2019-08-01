@@ -17,11 +17,13 @@ const ShirtSize = ({ name, onChange, value }) => (
       <option>Youth Small</option>
       <option>Youth Medium</option>
       <option>Youth Large</option>
+      <option>Women's XS</option>
       <option>Women's Small</option>
       <option>Women's Medium</option>
       <option>Women's Large</option>
       <option>Women's XL</option>
       <option>Women's 2XL</option>
+      <option>Men's XS</option>
       <option>Men's Small</option>
       <option>Men's Medium</option>
       <option>Men's Large</option>

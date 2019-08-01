@@ -17,12 +17,9 @@ export default function Header() {
         <Link activeClassName="active" href="/register">
           Register
         </Link>
-        <Link activeClassName="active" href={`/results/${yearsAgo(0)}`}>
-          {yearsAgo(0)}
+        <Link activeClassName="active" href={`/results/2018`}>
+          2018
         </Link>
-        {/* <Link activeClassName="active" href={`/results/${yearsAgo(1)}`}>
-          {yearsAgo(1)}
-        </Link> */}
       </nav>
     </header>
   );
