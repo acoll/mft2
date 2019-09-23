@@ -80,7 +80,7 @@ const results = {
     ]
   },
   "2019": {
-    timesUrl: "",
+    timesUrl: "https://my3.raceresult.com/136292/",
     fbAlbum:
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fset%3Da.916539378706618%26type%3D3&width=500",
     winners: [
