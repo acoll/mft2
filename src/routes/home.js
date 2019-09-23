@@ -33,20 +33,28 @@ class RaceDetails extends Component {
         <h1>2019 Monadnock Full Throttle Triathlon</h1>
         <h3>September 7th, 2019</h3>
         <hr />
-        <h2>Race Day Timeline</h2>
+        <h2>
+          {`Race Day Itinerary - `}
+          <a style={{ fontSize: 16 }} href="/assets/mft2-map.pdf">
+            Download Map
+          </a>
+        </h2>
         {renderDetailItem(
-          "Registration - 7 AM",
+          "Registration - 7 AM at Monadnock Christian Ministries Campground",
           <p>
-            Tell us you have arrived and be assigned a bib number. We'll set you
-            up with a tracking bracelet and some pre-race fuel.
+            We recommend that you drop off your bike at the Shattuck Park public
+            beach prior to check-in. Parking for the event is provided at the
+            campground and shuttles are available to get back to the beach
+            before the start of the race. Remember to stick around after you
+            finish to refuel and watch the award ceremonies.
           </p>
         )}
         {renderDetailItem(
           "Swim - 9 AM",
           <p>
             The race begins with a 1/2 mile swim in Thorndike Pond. Immediately
-            following your completion of the swim, you can move to the
-            transition area and then onto the bike event.
+            following your completion of the swim, transition into the biking
+            segment right at the beach.
           </p>
         )}
 
@@ -55,8 +63,8 @@ class RaceDetails extends Component {
           <p>
             The bike event follows a 11.2 mile route around Thorndike Pond. See
             the map below for the detailed route or turn-by-turn directions. The
-            bike event ends at the campground where there will be a water and
-            fuel station to help you push through the hike.
+            bike event ends at the campground where there will be a water
+            station to help you push through the hike.
           </p>
         )}
 
@@ -65,31 +73,36 @@ class RaceDetails extends Component {
           <p>
             The 5.3 mile hike starts at the campground and follows the remainder
             of the road up to the state park. Athletes will climb the White Dot
-            trail, descend the White Cross trail and finish back at the
-            campground. There will be at least 2 water stations along the hike
-            route.
+            trail on Mt. Monadnock, descend the White Cross trail and finish
+            back at the campground.
           </p>
         )}
 
         {renderDetailItem(
-          "Refuel!",
+          "Water Stations",
+          <p>
+            There is only one water station along the bike route so please plan
+            accordingly. There will be at least 2 water stations along the hike
+            route to the Monadnock summit and several more volunteer stations
+            along the way if you need anything. You can recognize a volunteer by
+            the race t-shirt and exclamatory shouts of encouragement.
+          </p>
+        )}
+
+        {renderDetailItem(
+          "Refuel at the Monadnock Christian Ministries Campground",
           <div>
-            <p>Join us after the race for food, hydration, and ceremonies.</p>
-            {/* <p style={{ display: "flex", alignItems: "center" }}>
+            <p>
+              Join us after the race at the finish line for food, hydration, and
+              ceremonies.
+            </p>
+            <p style={{ display: "flex", alignItems: "center" }}>
               <img src={hammerLogo} style={{ height: 100, paddingRight: 50 }} />
               Race supplements and materials provided by one of our sponsors
               Hammer Nutrition.
-            </p> */}
+            </p>
           </div>
         )}
-
-        {this.state.showMap ? (
-          <iframe
-            src="https://www.google.com/maps/d/embed?mid=zdWx7yjXwyhw.k1FcH453JfSY"
-            width="100%"
-            height="480"
-          />
-        ) : null}
       </section>
     );
   }

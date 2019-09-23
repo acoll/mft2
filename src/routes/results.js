@@ -54,6 +54,8 @@ const results = {
   },
   "2018": {
     timesUrl: "https://my2.raceresult.com/106876/",
+    fbAlbum:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fset%3Da.689632451397313%26type%3D3&width=500",
     winners: [
       {
         category: "First Place Male",
@@ -76,38 +78,53 @@ const results = {
         category: "First Place 3-Person Team"
       }
     ]
+  },
+  "2019": {
+    timesUrl: "",
+    fbAlbum:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fset%3Da.916539378706618%26type%3D3&width=500",
+    winners: [
+      {
+        category: "First Place Male",
+        time: "2:00:28.4",
+        names: ["Lars Sauvola"]
+      },
+      {
+        category: "First Place Female",
+        time: "2:34:15.6",
+        names: ["Ashley Bertram"]
+      },
+      {
+        names: ["Strangers"],
+        time: "3:15:42.5",
+        category: "First Place 2-Person Team"
+      },
+      {
+        names: ["Vert Isn't Real Society"],
+        time: "2:01:55.1",
+        category: "First Place 3-Person Team"
+      }
+    ]
   }
 };
 
-class Album extends Component {
-  componentDidMount() {
-    return fetch(`${window.API_URL}/photos/${this.props.year}`)
-      .then(res => res.json())
-      .then(({ data }) => this.setState({ photos: data }));
-  }
-  renderPhoto({ image, link }) {
-    const src = image.source;
+function Album(props) {
+  const url = results[props.year].fbAlbum;
 
-    return (
-      <a href={link} target="_blank">
-        <img src={src} alt="Photo From FB" />
-      </a>
-    );
-  }
-  render() {
-    if (!this.state.photos) {
-      return <div>Loading Photos</div>;
-    }
-
-    const sorted = this.state.photos
-      .map(photo => ({
-        image: photo.images[1],
-        link: photo.link
-      }))
-      .sort((a, b) => a.image.height - b.image.height);
-
-    return <div class={style.photos}>{sorted.map(this.renderPhoto)}</div>;
-  }
+  return (
+    <div>
+      <iframe
+        src={url}
+        width="500"
+        height="621"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowTransparency="true"
+        allow="encrypted-media"
+      ></iframe>
+    </div>
+  );
 }
 
 function Winner({ names, overallTime, description }) {
@@ -142,7 +159,7 @@ function Winners({ year }) {
 export default function Results({ year }) {
   const url = results[year].timesUrl;
 
-  const lastYear = parseInt(year) - 1;
+  const lastYear = parseInt(year, 10) - 1;
 
   return (
     <div class={style.page}>

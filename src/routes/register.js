@@ -403,13 +403,13 @@ export default class Register extends Component {
     return (
       <div class={style.page}>
         <h1>2019 MFT2 Registration</h1>
-        {/* <p>
+        <p style={{ maxWidth: 400 }}>
           Online registration is now closed. You can still register in person at
-          7am tomorrow (September 8th) at the Monadnock Bible Conference
-          campground (on Poole road before you reach the Monadnock State Park).
+          7am tomorrow (September 7th) at the Monadnock Christian Ministries
+          Campground (on Poole road before you reach the Monadnock State Park).
           Best of luck and we look forward to seeing you tomorrow morning!
-        </p> */}
-        {this.state.checkoutComplete ? (
+        </p>
+        {/* {this.state.checkoutComplete ? (
           <h4>Thank You!</h4>
         ) : (
           <Wizard onSubmit={this.checkout} loading={this.state.loading} />
@@ -431,7 +431,7 @@ export default class Register extends Component {
             </a>{" "}
             if you have any questions.
           </li>
-        </ul>
+        </ul> */}
       </div>
     );
   }

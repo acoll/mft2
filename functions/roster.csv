@@ -1,57 +1,83 @@
-"7500","ch_1Burd4J8PNte7HTRT7n5MkiF","New Ipswich ","grahamheagy@live.com","Graham","Full Throttle","Male","Heagy","Men's Large","","","New Hampshire ","SINGLE"
-"7500","ch_1CFANbJ8PNte7HTRaYXv9XXn","Walpole","mike@walpolefireems.com","Michael","Thinking Twice","Male","Flynn","Men's 2XL","","","New Hampshire","SINGLE"
-"7500","ch_1CX6RnJ8PNte7HTRCmdIT0dt","HEBRON","jgdlweir@comcast.net","DANA","Half Steam","female","WEIR","Women's Medium","","","CT","SINGLE"
-"7500","ch_1CX6TQJ8PNte7HTRpZRNAq19","Hebron","jgdlweir@comcast.net","Jim","Thinking Twice","Male","Weir","Men's Large","","","CT","SINGLE"
-"13500","ch_1CdG7gJ8PNte7HTR0krn5eRM","Jaffrey","erowland@mascenic.org","Erika ","Thinking Twice","Female ","Rowland ","Women's Large","Men's Small","Men's Large","New Hampshire ","LANDROW","TRIPLE"
-"7500","ch_1CfVqPJ8PNte7HTR3ksrWTPc","Dover","parlope@gmail.com","Peter","Half Steam","Male","Franchina","Men's Medium","","","New Hampshire ","SINGLE"
-"7500","ch_1CgM1WJ8PNte7HTRoeOZ1yJe","Groton","owentorgersen@gmail.com","Owen","Full Throttle","Male","Torgersen","Men's Large","","","Massachusetts","SINGLE"
-"7500","ch_1CgM5QJ8PNte7HTRygvVR9ZC","Groton","dontorg@gmail.com","Donald","Half Steam","Male","Torgersen","Men's Large","","","Massachusetts","SINGLE"
-"7500","ch_1CinPPJ8PNte7HTRElALPFtd","fitzwilliam","robyndandersen@gmail.com","robyn","Half Steam","female","andersen","Women's Small","","","nh","SINGLE"
-"7500","ch_1CqWkjJ8PNte7HTREQee1ddv","Milford","psrolanti@comcast.net","Paul","Full Throttle","Male","Rolanti","Men's XL","","","New Hampshire","SINGLE"
-"7500","ch_1Cqgl5J8PNte7HTRlOx5hIB7","Newipswich","lyle.rautiola@icloud.com","Lyle ","Full Throttle","Male ","Rautiola ","Men's Medium","","","Nh","SINGLE"
-"7500","ch_1CraGdJ8PNte7HTRfq43kzIX","Auburn ","kerisexton12@gmail.com","Keri","Full Throttle","Female","Sexton","Women's Small","","","New Hampshire","SINGLE"
-"7500","ch_1Cwt5nJ8PNte7HTRnBWDmTWJ","Medford","gsawin@gmail.com","Gregory","Half Steam","Gregory E. Sawin","Sawin","Men's Large","","","MA","SINGLE"
-"7500","ch_1CwtfKJ8PNte7HTRJfJp9Pc1","Boston","goetz77@yahoo.com","Goetz","Thinking Twice","Male","Friederichs","Men's Medium","","","MA","SINGLE"
-"7500","ch_1CxF8fJ8PNte7HTRj3pdHNOY","Keene","nbisaccio@gmail.com","Nora","Thinking Twice","Female","Bisaccio","Women's Medium","","","NH","SINGLE"
-"13500","ch_1Cxe09J8PNte7HTR2T6lCDHG","New Ipswich","jblarney.me@gmail.com","Jonathan","Full Throttle","Male","McInerney","Women's Small","Men's Medium","Men's Medium","MA","Have Shoes-Will Throttle","TRIPLE"
-"7500","ch_1CxxvtJ8PNte7HTRuFdIfRXl","Jamaica Plain","bmiller122@yahoo.com","Brian","Half Steam","Male","Miller","Men's Large","","","MA","SINGLE"
-"11500","ch_1CyN2yJ8PNte7HTRWqX4sqnD","Salem","arika0210@gmail.com","Arika","Half Steam","Female","Schultz","Women's Medium","Men's Large","","New Hampshire","Fools","DOUBLE"
-"7500","ch_1CyzxrJ8PNte7HTRyepaDzKB","Harrisville","vbarnardesq@gmail.com","Victoria","Thinking Twice","Female","Barnard","Women's Medium","","","New Hampshire","SINGLE"
-"13500","ch_1CzbGXJ8PNte7HTRMhuB196p","New Ipswich","jbertram91@hotmail.com","Justin","Full Throttle","Male","Bertram","Men's Large","Men's Large","Men's Large","New Hampshire","The Weakend Warriors ","TRIPLE"
-"7500","ch_1CzbY5J8PNte7HTR7mMwrJw9","Tyngsborough","gam0916@yahoo.com","Gabriel ","Full Throttle","Male","Madonna","Men's Large","","","Massachusetts","SINGLE"
-"7500","ch_1CzbanJ8PNte7HTRzMGhtaY1","Concord","skyereese@comcast.net","Skye","Full Throttle","Female","Reese ","Women's Small","","","New Hampshire","SINGLE"
-"13500","ch_1Czp7EJ8PNte7HTRHzd2sDFD","Rindge","kathvandyke@yahoo.com","Kath","Full Throttle","Female","Van Dyke","Women's Small","Women's Small","Women's Medium","NH","Old & New","TRIPLE"
-"7500","ch_1Czw52J8PNte7HTREz2HYtZk","Rindge","ashley.r.vandyke@hotmail.com","Ashley","Half Steam","Ashley Bertram","Bertram","Women's Small","","","NH","SINGLE"
-"7500","ch_1CzwAIJ8PNte7HTR8FM7EMiO","Rindge","kenyon990@yahoo.com","Kenyon","Full Throttle","Kenyon Bertram","Bertram","Men's Large","","","NH","SINGLE"
-"7500","ch_1D0yamJ8PNte7HTRSvx6R8FJ","Hillsborough","jlbean721@gmail.com","Jana","Half Steam","Female","Laudadio","Women's Medium","","","NH","SINGLE"
-"13500","ch_1D1GkSJ8PNte7HTR5ns6j5iM","New Ipswich","havyj75@yahoo.com","Joe","Full Throttle","Male","Haavisto","Men's Medium","Men's Large","Men's Large","New Hampshire","FF Grundlands","TRIPLE"
-"7500","ch_1D27H1J8PNte7HTRdozweli5","Rindge","gavinketola16@gmail.com","Gavin","Thinking Twice","Male","Ketola","Men's Large","","","New Hampshire ","SINGLE"
-"7500","ch_1D27J5J8PNte7HTR7vbWgt6u","Rindge","gavinketola16@gmail.com","Hayden","Thinking Twice","Male","Ketola","Men's Large","","","New Hampshire ","SINGLE"
-"7500","ch_1D28kXJ8PNte7HTRPHgx7abd","Maynard","swalczewski@gmail.com","Steve","Half Steam","male","Walczewski","Men's XL","","","MA","SINGLE"
-"7500","ch_1D2GvFJ8PNte7HTR8dqlbwr4","Rindge","jbvandyke@formupfoundations.com","Jamison","Half Steam","Jamison Van Dyke","Van Dyke","Men's XL","","","New Hampshire","SINGLE"
-"13500","ch_1D2L9XJ8PNte7HTRce0uQ38X","Hancock","gillisr23@comcast.net","Robert","Half Steam","Male","Gillis","Men's 2XL","Women's 2XL","Women's Medium","New Hampshire","Three Amigos","TRIPLE"
-"13500","ch_1D2nTMJ8PNte7HTRnfVfeUkJ","Acton","jignazio@mfs.com","Jim","Half Steam","Male","Ignazio","Men's Large","Men's Large","Women's Large","MA","Green Monsters","TRIPLE"
-"7500","ch_1D3T1GJ8PNte7HTR5YiXE7Kr","Peterborogh","bsomerset7@gmail.com","Beth ","Half Steam","Female","Somerset","Women's Medium","","","NH","SINGLE"
-"13500","ch_1D3TijJ8PNte7HTRfabTucKR","Rindge","kketola@aol.com","Kate ","Full Throttle","Female ","Ketola","Women's Medium","Women's Medium","Women's Medium","New Hampshire","Team 3 Amigas","TRIPLE"
-"7500","ch_1D4Hf8J8PNte7HTRjqSVXevW","Troy","nh4lukemans@hotmail.com","Sean","Half Steam","Male","Lukeman","Men's Large","","","New Hampshire","SINGLE"
-"7500","ch_1D4ZnFJ8PNte7HTRR6Z0wSCz","Littleton","jessica.l.royal@gmail.com","Jessica","Half Steam","Female","Royal","Women's Medium","","","MA","SINGLE"
-"7500","ch_1D4ozUJ8PNte7HTRmJEDSIWS","Keene","rkoning@ne.rr.com","Robert","Half Steam","Robert Koning","Koning","Men's Large","","","NH","SINGLE"
-"7500","ch_1D501nJ8PNte7HTRfMTEwFNy","Sharon","chrislittsnh@gmail.com","Christopher ","Half Steam","Chris Litts","Litts","Men's Large","","","New Hampshire","SINGLE"
-"7500","ch_1D519yJ8PNte7HTRzPmQm5t7","Assonet ","mbenefactum@gmail.com","Mark","Full Throttle","Male ","Weldonn","Men's Large","","","Massachusetts ","SINGLE"
-"13500","ch_1D5CoGJ8PNte7HTRZU8jk2Tx","Rindge","singspiration1967@gmail.com","Linda","Full Throttle","Male Male Female","Goddard","Women's Small","Men's Large","Men's Large","NH","2dudechick","TRIPLE"
-"7500","ch_1D5HBSJ8PNte7HTRjANkzx6q","Dublin","beatrix.haddock@gmail.com","Beatrix","Half Steam","Female","Haddock","Women's Small","","","New Hampshire","SINGLE"
-"7500","ch_1D5KIbJ8PNte7HTRoHNPXQI6","Rindge","nharcher1@gmail.com","Jonathan","Half Steam","Jonathan Burt","Burt","Men's Large","","","New Hampshire","SINGLE"
-"13500","ch_1D5PKbJ8PNte7HTRt8EUW0GT","Rindge","Mandjchap07@hotmail.com","Marcy","Half Steam","F","Chapman","Women's Small","Women's Small","Men's Medium","New Hampshire","JLM ","TRIPLE"
-"7500","ch_1D5upzJ8PNte7HTRhWCQjoNH","Brattleboro","taylor.burt@gmail.com","Taylor","Half Steam","Male","Burt ","Men's Large","","","Vermont","SINGLE"
-"11500","ch_1D62TwJ8PNte7HTRGW0mGBXE","Jaffrey","msmithcarpentry@myfairpoint.net","Matthew","Full Throttle","male","Smith","Men's Medium","Men's XL","","New Hampshire","Whistling Marmots","DOUBLE"
-"9000","ch_1D6FbMJ8PNte7HTR8k2PUhoo","Middletown","djthieme2@hotmail.com","Don","Full Throttle","Male","Thieme","Men's Medium","","","RI","SINGLE"
-"9000","ch_1D6PyyJ8PNte7HTRzkgvjVts","Hancock","Mlsawich@gmail.com","Mary","Thinking Twice","Mary Sawich","Sawich","Women's Small","","","New Hampshire","SINGLE"
-"9000","ch_1D6RJiJ8PNte7HTRNFnEkiVW","Rindge ","lars@qccnh.com","Lars","Full Throttle","Male","Sauvola","Men's Medium","","","New Hampshire ","SINGLE"
-"9000","ch_1D6SU8J8PNte7HTRrGTKySa5","Sharon","beno@asherconstruction.com","Ben","Full Throttle","Male","Olson","Men's Large","","","Nh","SINGLE"
-"9000","ch_1D6TLKJ8PNte7HTRKwVCwdjJ","Hancock","kbus122@yahoo.com","Katherine","Half Steam","female","Cousins","Women's Medium","","","NH","SINGLE"
-"7500","ch_1D6U7yJ8PNte7HTRyUThxZVZ","Bethesda","felix.knollmann@gmail.com","Felix","Full Throttle","male","Knollmann","Men's Medium","","","Maryland","SINGLE"
-"9000","ch_1D6qMWJ8PNte7HTRSQBTwMBi","Harrisville","jeff@themountain.com","Jeff","Full Throttle","Male","Grosner","Men's Large","","","New Hampshire","SINGLE"
-"9000","ch_1D73CXJ8PNte7HTR4H2KBa0k","sharon","dustinkrook@yahoo.com","Dustin","Full Throttle","male","Krook","Men's Large","","","NH","SINGLE"
-"9000","ch_1D7UnsJ8PNte7HTRfmp2yc0n","Hanover","JTDerian@gmail.com","JT","Half Steam","Male","Derian","Men's Large","","","New Hampshire","SINGLE"
-"9000","ch_1D7WLjJ8PNte7HTRdPo0ZX9d","Keene","mickfoot1@hotmail.com","Michael","Half Steam","Male","Foot","Men's Large","","","New Hampshire","SINGLE"
-"9000","ch_1D7q16J8PNte7HTRM9vw2hIM","Rindge ","laserproforms@yahoo.com","Ezra","Full Throttle","Male ","Ketola","Men's Medium","","","New Hampshire ","SINGLE"
+"email","fitness","first_name","last_name","gender","shirt_size_1","shirt_size_2","shirt_size_3","type","team_name","city","state","timestamp"
+"grahamheagy@live.com","Full Throttle","Graham","Heagy","Male","Men's Large","","","SINGLE",,"New Ipswich ","New Hampshire ",1536535191191
+"saariwalter@gmail.com","Half Steam","Walter","Saari","Male","Men's Large","","","SINGLE",,"New ipswich","New hampshire",1536624487817
+"equidans@msn.com","Full Throttle","Janice","Cragnolin","Female","Women's Large","","","SINGLE",,"Unadilla","NY",1541902466682
+"rrowe@gunstock.com","Thinking Twice","Robin","McGonagle","Female","Women's Large","","","SINGLE",,"GILFORD","NH",1544643384250
+"bel.lechuza8@gmail.com","Full Throttle","Thessa","Lechuza","Female","Women's Small","","","SINGLE",,"Antrim","New Hampshire",1547144166783
+"kerisexton12@gmail.com","Full Throttle","Keri","Sexton","Female","Women's Small","","","SINGLE",,"Auburn","New Hampshire",1553370081884
+"Scaveney09@gmail.com","Thinking Twice","Sara","Caveney","Female","Women's Large","","","SINGLE",,"Northfield","Nh",1554232181626
+"Andrew.Krivak@gmail.com","Half Steam","Andrew","Krivak","Male","Men's Medium","","","SINGLE",,"Somerville","Massachusetts",1554560270246
+"Hjamesphotos@gmail.com","Thinking Twice","Hayden","James","Male","Men's Large","","","SINGLE",,"Bennington","New Hampshire",1555104792664
+"sarahgrieder@gmail.com","Half Steam","Sarah","Schultz ","Female ","Women's Medium","Women's Medium","Women's Medium","TRIPLE","KLS","Rindge ","Nh",1555271833454
+"dellogonuts@hotmail.com","Half Steam","Elizabeth","Dellogono","Female ","Women's Small","","","SINGLE",,"Jaffrey","NH",1558704232232
+"jenglish163@gmail.com","Full Throttle","Joshua","English","Male","Men's Medium","","","SINGLE",,"Keene ","New Hampshire ",1560359340013
+"sam.ferreira91@yahoo.com","Half Steam","Samantha ","Thurston","Female","Women's Medium","","","SINGLE",,"Fall River","Massachusetts",1560906820635
+"conniemariaxo@gmail.com","Thinking Twice","Connie ","Medeiros ","Female ","Women's Medium","","","SINGLE",,"Fall River ","Massachusetts ",1560978726328
+"beirie5@hotmail.com","Half Steam","Patricia ","Toomey","Female","Women's Small","","","SINGLE",,"Fitzwilliam","new hampshire",1561426244230
+"trjunior@gmail.com","Full Throttle","Anthony","Riello","Male","Men's Large","","","SINGLE",,"Sterling","MA",1562214817433
+"adenoncour15@gmail.com","Half Steam","Alex ","DeNoncour ","Male ","Men's Large","","","SINGLE",,"Chepachet","Rhode Island ",1562853677165
+"travis.salo@hotmail.com","Full Throttle","Travis","Salo","Male","Men's Large","","","SINGLE",,"Rindge","New Hampshire",1563195238973
+"kacie.ross@gmail.com","Half Steam","Katherine","Ross","Female","Men's Small","","","SINGLE",,"Hancock","New Hampshire",1563284314659
+"daniel.wright@signaturebreads.com","Full Throttle","Daniel","Wright","Daniel Wright","Men's Large","","","SINGLE",,"Nashua","New hampshire ",1563306836914
+"jeff@themountain.com","Full Throttle","Jeff","Grosner","Male","Youth Medium","","","SINGLE",,"Harrisville","New Hampshire",1563625434714
+"goetz77@yahoo.com","Thinking Twice","GOETZ","Friederichs","Male","Men's Medium","","","SINGLE",,"BEVERLY","Massachusetts",1563844748405
+"gsawin@gmail.com","Half Steam","Gregory","Sawin","Gregory E. Sawin","Men's Large","","","SINGLE",,"Medford","MA",1563846076390
+"bmiller122@yahoo.com","Half Steam","Brian","Miller","Male","Men's Large","","","SINGLE",,"jamaica Plain","MA",1563846589579
+"deeaan12@gmail.com","Full Throttle","Aidan ","Dean","Male","Men's Large","","","SINGLE",,"Laconia","New Hampshire",1563887012325
+"ashley.r.vandyke@hotmail.com","Full Throttle","Ashley","Bertram","Ashley Bertram","Women's Small","","","SINGLE",,"Rindge","NH",1563907410747
+"kenyon990@yahoo.com","Full Throttle","Kenyon","Bertram","Kenyon Bertram","Men's Large","","","SINGLE",,"Rindge","New Hampshire",1563907550026
+"jacquelyn@ne.rr.com","Half Steam","Jacquelyn ","Trombly ","Female ","Women's Medium","","","SINGLE",,"Keene","New Hampshire ",1564063495029
+"kdstudio@comcast.net","Full Throttle","Kent","Damon Jr.","Male","Men's Medium","","","SINGLE",,"Cambridge","MA",1564079544542
+"robertson.emma80@gmail.com","Thinking Twice","Emma","Johnson","female","Women's Small","","","SINGLE",,"Jaffrey","NH",1564511101760
+"oliverellerkamp13@gmail.com","Full Throttle","Oliver","Ellerkamp","Male","Men's Medium","","","SINGLE",,"Peterborough","New Hampshire",1564542208343
+"delaneymorrissey@gmail.com","Half Steam","Delaney","Morrissey ","Female","Women's Large","","","SINGLE",,"Antrim","New Hampshire",1564784658615
+"rcmrjm@hotmail.com","Half Steam","Reed","MacNeilage","Reed MacNeilage","Men's Large","","","SINGLE",,"MILFORD","NH",1564955497134
+"johnhernerdc@yahoo.com","Half Steam","John","Herner","Male","Men's Large","","","SINGLE",,"Milford","New Hampshire ",1565045062040
+"rtyszko@gmail.com","Thinking Twice","Robert","Tyszko","Robert Tyszko","Men's Large","Men's Medium","Men's Medium","TRIPLE","Team OTEC","AMHERST","NH",1565101958244
+"kdbarnard12@gmail.com","Full Throttle","Kevin","Barnard","Male","Men's Large","","","SINGLE",,"Amherst","NH",1565819587809
+"mattsaari27@gmail.com","Half Steam","Matt","Saari ","Male","Men's Medium","","","SINGLE",,"New Ipswich ","NH",1565832907182
+"shawnsepp88@gmail.com","Half Steam","Shawn","Seppala","Male","Men's Medium","Men's Medium","Women's Small","TRIPLE","Threes a crowd ","Rindge","New Hampshire ",1565833232867
+"granitefeet@gmail.com","Full Throttle","Jonathan","McInerney","Male","Men's Medium","Men's Small","Women's XS","TRIPLE","Vert Isn't Real Society","New Ipswich","New Hampshire",1565886917355
+"scooterdusini@yahoo.com","Half Steam","Diane","Dusini","female","Women's Large","","","SINGLE",,"Scarborough","Maine",1565996674832
+"don.slovenkai@yahoo.com","Full Throttle","Don","Slovenkai","M","Men's Large","","","SINGLE",,"New Ipswich","New Hampshire",1566222922419
+"monica.s.foley@gmail.com","Full Throttle","Monica","Foley","Female","Women's Medium","","","SINGLE",,"Keene","New Hampshire",1566237406922
+"stevesantaniello@gmail.com","Thinking Twice","Steve","Santaniello","Male","Men's Medium","","","SINGLE",,"milford","new hampshire",1566404561096
+"singspiration1967@gmail.com","Full Throttle","Linda","Goddard","Female","Women's Small","","","SINGLE",,"Rindge","New Hampshire",1566417541384
+"soukup.jason@yahoo.com","Full Throttle","Jason ","Soukup","Male","Men's Large","","","SINGLE",,"Chesterfield ","Massachusetts ",1566476382042
+"lgmacneilage@gmail.com","Half Steam","Lauren","MacNeilage","Femail","Women's Large","","","SINGLE",,"Milford","NH",1566482802002
+"jcormier20@yahoo.com","Half Steam","Justin","Cormier","Male","Men's Large","","","SINGLE",,"New Ipswich ","New Ipswich",1566482903230
+"jimignazio@icloud.com","Half Steam","Jim","Ignazio","Male","Men's XL","Women's Medium","Women's Large","TRIPLE","Team Kryptonite","Acton","Ma",1566516417605
+"jwkrichbaum@gmail.com","Half Steam","Jared","Krichbaum","Male","Men's Medium","","","SINGLE",,"NEW IPSWICH","New Hamshire",1566519195196
+"jmcfadden80@gmail.com","Half Steam","John","McFadden","Male","Men's Large","","","SINGLE",,"Keene","New Hampshire ",1566527833817
+"jmpeters389@gmail.com","Full Throttle","Jordan","Peters","Makes","Women's Medium","Men's Large","Men's Large","TRIPLE","acidotic RACING","Keene","NH",1566862245322
+"jason.nero32@gmail.com","Full Throttle","Jason","Nero","Male","Men's Medium","","","SINGLE",,"Jaffrey ","New Hampshire ",1566866933719
+"lisahicks57@gmail.com","Half Steam","Lisa","Hicks","Female","Women's Small","Women's Small","","DOUBLE","Wachusett Women","Holden","MA",1566868014875
+"ketola@worldpath.net","Thinking Twice","Francesca","Ketola","female","Men's Small","Men's Small","Women's Small","TRIPLE","Ketola-Acouin","Rindge","New Hampshire",1566910061591
+"ketola@worldpath.net","Thinking Twice","Paxton ","Ketola","male","Youth Large","Youth Medium","Youth Large","TRIPLE","Ketola","Rindge","New Hampshire",1566910185620
+"marcyshugeabstractpaintings@gmail.com","Half Steam","Joshua","Chapman ","Male","Men's Medium","Men's Large","Women's Medium","TRIPLE","JCM","Rindge ","Nh",1566953456828
+"wfwhit@comcast.net","Full Throttle","Win","Whitcomb","M","Men's Medium","","","SINGLE",,"Northampton","MA",1567044470149
+"thriftyb@hotmail.com","Full Throttle","Leila","Luopa","Female","Women's Large","","","SINGLE",,"Fitzwilliam","New Hampshire",1567051090995
+"tim.selby@gmail.com","Half Steam","tim","selby","Male","Men's XL","","","SINGLE",,"PETERBOROUGH","NH",1567174358989
+"lyle.rautiola@icloud.com","Full Throttle","Lyle ","Rautiola ","Male ","Youth Medium","","","SINGLE",,"Rindge ","New Hampshire ",1567342177800
+"m_coleman@dublinschool.org","Full Throttle","Matt","Coleman","Male","Men's Medium","","","SINGLE",,"Bethesda ","Maryland",1567358853306
+"cdwilder@gmail.com","Full Throttle","Charles ","Wilder ","Male","Men's Medium","","","SINGLE",,"Newfields ","New Hampshire ",1567432502192
+"laserproforms@yahoo.com","Full Throttle","Ezra","Ketola","Male","Men's Medium","","","SINGLE",,"Rindge","NH",1567453594361
+"bailey0101@yahoo.com","Thinking Twice","Tammy","Hubbard","Female","Men's Medium","Men's Medium","Men's Large","TRIPLE","Turtle Power","West Boylston ","Massachusetts",1567517776109
+"larssomero@gmail.com","Full Throttle","Lars","Somero","Male","Men's Medium","Men's Large","Men's XL","TRIPLE","ALM","New Ipswich ","New Ipswich",1567684322765
+"sam.broadaway@gmail.com","Full Throttle","Sam","Broadaway","Male","Men's Large","","","SINGLE",,"Nashua","NH",1567688432485
+"marieg1185@gmail.com","Full Throttle","Marie","Broadaway","Female","Women's Medium","","","SINGLE",,"Nashua","NH",1567699221055
+"deborahrhhansen@hotmail.com","Half Steam","DEB","HANSEN","female","Women's Medium","","","SINGLE",,"Keene","NH",1567700735852
+"denisg@clemson.edu","Thinking Twice","Denis","Garcia","Male","Men's Medium","","","SINGLE",,"Central","SC",1567728621428
+"bsomerset7@gmail.com","Full Throttle","Beth","Somerset","Female","Women's Medium","","","SINGLE",,"Peterborough ","NH",1567734005145
+"mccuskerbob725@gmail.com","Full Throttle","Bob","McCusker","Male","Men's Large","","","SINGLE",,"Rindge","New Hampshire",1567767763992
+"kirk@stenersen.us","Half Steam","Kirk","Stenersen","Male","Men's Large","","","SINGLE",,"Rindge","New Hampshire",1567771140816
+"naumie1992@gmail.com","Full Throttle","Stefan","Naumburger ","Male","Men's Large","","","SINGLE",,"Fitzwilliam ","New Hampshire",1567789718110
+"chrislittsnh@gmail.com","Half Steam","Chris","Litts","Male","Men's Medium","","","SINGLE",,"Sharon","New Hampshire",1567792915172
+"paquinlandsurveyingpllc@gmail.com","Full Throttle","Jed","Paquin","Male","Men's Large","","","SINGLE",,"Rindge","New Hampshire",1567800037171
+"zllvtgirl@gmail.com","Thinking Twice","Zola","Luebkeman","Zola Luebkeman","Women's Medium","","","SINGLE",,"Westmoreland","NH",1567800045299
+"lars@qccnh.com","Full Throttle","Lars","Sauvola","Male","Men's Medium","","","SINGLE",,"Rindge","New Hampshire",1567806994297
+"laurasauvola@icloud.com","Full Throttle","Laura","Sauvola","Female","Women's Small","","","SINGLE",,"Rindge","New Hampshire",1567807126708
+"California_88@icloud.com","Full Throttle","Katie","Naumburger","Female","Men's XS","","","SINGLE",,"Fitzwilliam","New Hampshire",1567807943435
+"kathiewatt@gmail.com","Half Steam","Kathie","Watt","female","Women's XL","","","SINGLE",,"Acton","MA",1567810496098
+"gill.watt@gmail.com","Thinking Twice","Gill","Watt","male","Men's XL","","","SINGLE",,"Acton","MA",1567810630533
+"elijahketola@gmail.com","Half Steam","Elijah","Ketola","Male","Men's Large","Youth Large","","DOUBLE","Fast pass ","RINDGE ","New Hampshire ",1567816889598
